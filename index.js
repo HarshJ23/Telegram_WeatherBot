@@ -1,10 +1,11 @@
-import dotenv from 'dotenv';
-import TelegramBot from "node-telegram-bot-api";
-import axios from "axios";
-import express from "express";
+const dotenv = require('dotenv');
+const TelegramBot = require("node-telegram-bot-api");
+const axios = require("axios");
+const express = require('express');
+
 
 const app = express();
-dotenv.config();
+require('dotenv').config();
 
 const port = 3000;
 app.listen(port, () => {
